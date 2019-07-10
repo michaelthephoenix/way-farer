@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float:right;
+    border-left:1px solid #bbb;
+  }
+  ul > p > a {
+      text-decoration: none;
+      color: white;
+      margin-left: 15px;
+      text-transform: uppercase;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    /* background-color: #111; */
+  }
+
+.trips {
+    margin: 20px 50px auto 50px;
+    padding: 5px;
+
+}
+.trip{
+    height:200px;
+    width: 100%;
+    background-color: darkgray;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 3px;
+
+
+}
+
+.placeImage {
+    width:150px;
+    height: 150px;
+    margin: 25px;
+    background-color:white;
+    position: relative;
+}
+
+.tripSummary {
+    position: relative;
+    margin: 25px auto 25px 0;
+}
+
+.tripSummary > p {
+    margin-top: auto;
+}
