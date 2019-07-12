@@ -25,3 +25,17 @@ function logIn() {
         alert("Access Denied")
     }
 }
+
+function createTrip() {
+    var createTripBtn = document.getElementById('createTripBtn');
+    var createTripForm = document.getElementById('myTripForm');
+    var allTrips = document.getElementsByClassName('sampleTrips');
+    createTripForm.style.display = 'block';
+    allTrips.style.display = 'none';
+
+    
+}
+
+function displaytrips() {
+    allTrips.style.display = 'block'
+}

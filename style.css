@@ -10,7 +10,7 @@ html, body {
 }
 
 main {
-    min-height: 90%;
+    /* min-height: 90%; */
     margin: 0 40px 0 40px;
 }
 
@@ -96,7 +96,7 @@ footer  {
     background-color: #303036;
     color: #d3d3d3;
     min-height: 10%;
-    position: relative;
+    position: absolute;
     bottom: 0px;
     width: 100%;
 }
@@ -111,11 +111,6 @@ footer .copyright {
     bottom: 0px;
     left: 0px;
     width: 100%;
-}
-
-footer > hr {
-    margin: 0;
-    background-color: white;
 }
 
 #signInForm {
