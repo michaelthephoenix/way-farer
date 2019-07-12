@@ -1,45 +1,69 @@
 html, body {
     height: 100%;
     margin: 0;
-    background-image: url("blur.jpg");
-    /* background-image: cross-fade(10%); */
-    background-repeat: no-repeat;
     font-family: sans-serif;
-    background-size: cover;
-
 }
 
 main {
-    /* min-height: 90%; */
     margin: 0 40px 0 40px;
+    position: relative;
+    z-index: 1;
 }
-
-/* .pageWrapper {
-    min-height: 100%;
+/* .container {
+    display: flex;
 } */
+
+body:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(50%);
+    /* filter: blur(4px); */
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('blur.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 
 header{
     text-align: center;
     color: black;
-    font-size: 32px;
+    font-size: 40px;
     text-transform: uppercase;
     margin: 0;
     padding-left: 10px;
     height: 50px;
-
-
+    width: 100%;
+    font-family: 'Cinzel Decorative', sans-serif;
 }
 
-p {
+.firstQoute {
     font-size: 24px;
     text-align: center;
 }
-
-/* .container {
-    display: flex;
-    justify-content: flex-end;
-} */
-
+.qoutes {
+    /* background-color: rgb(236, 235, 235); */
+    padding: 20px;
+    border-radius: 2px;
+    display: inline;
+    float: left;
+    margin: 50px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 36px;
+}
+.qoutes > p {
+    font-size: 24px;
+}
 .form {
     width: 350px;
     background-color: rgb(36, 36, 36);
@@ -99,6 +123,7 @@ footer  {
     position: absolute;
     bottom: 0px;
     width: 100%;
+    z-index: 1;
 }
 
 

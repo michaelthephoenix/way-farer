@@ -5,8 +5,6 @@ var signInForm = document.getElementById('signInForm');
 function openSignInForm() {
     signUpForm.style.display = 'none'
     signInForm.style.display = 'block'
-
-    
 }
 
 function logIn() {
@@ -39,3 +37,5 @@ function createTrip() {
 function displaytrips() {
     allTrips.style.display = 'block'
 }
+
+// slide show
