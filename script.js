@@ -34,6 +34,10 @@ function createTrip() {
     
 }
 
+function cancelTrip() {
+    createTripForm.style.display = 'none';
+}
+
 function displaytrips() {
     allTrips.style.display = 'block'
 }

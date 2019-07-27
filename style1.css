@@ -9,18 +9,18 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
+}
   
   li {
     float:right;
-    /* border-left:1px solid #bbb; */
-  }
-  ul > p > a {
-      text-decoration: none;
-      color: white;
-      margin-left: 15px;
-      text-transform: uppercase;
-  }
+}
+
+ul > p > a {
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
   
   li:last-child {
     border-right: none;
@@ -48,13 +48,21 @@ ul {
 .trip{
     height:200px;
     width: 60%;
-    background-color: darkgray;
+    background-color: #dddddd;
     margin-bottom: 5px;
     display: flex;
     justify-content: flex-start;
     border-radius: 3px;
 
 
+}
+@media screen and (max-width: 700px) {
+  .trips {
+    margin: 0;
+  }
+  .trip{
+    width: 100%;
+  }
 }
 
 .placeImage {
@@ -80,11 +88,13 @@ ul {
   }
 }
 
+
 /* ADMIN CSS */
 .addtrip {
   border: none;
   padding: 14px 25px;
   margin: 5px;
+  margin-bottom: 0px;
   color: white;
   background-color:transparent;
   border-radius: 2px; 
@@ -96,7 +106,6 @@ ul {
 .newTripForm {
   display: flex;
   justify-content: center;
-  /* background-color: grey; */
 }
 .formSpaceControll{
   margin: 10px;
@@ -105,8 +114,18 @@ ul {
 }
 
 .myTripForm{
-  width: 40%;
+  margin-top: 5px;
+  width: 50%;
   display: none;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+@media screen and (max-width: 1100px) {
+  .myTripForm {
+    width: 90%;
+  }
 }
 
 .smallHead {
@@ -138,7 +157,7 @@ input {
   font-size: 16px;
 }
 span {
-  color: #D46F37;
+  color: black;
 }
 
 label {
@@ -158,6 +177,41 @@ label {
   border: none;
   padding: 10px;
   border-radius: 2px;
+}
+
+#cancelTripBtn {
+  background-color: rgb(204, 25, 25);
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+
+}
+.adminHeaders {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.bookings {
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 15px;  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 /* ADMIN CSS */

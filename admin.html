@@ -11,8 +11,8 @@
     <main>
         <nav>
             <ul>
-                <li class="links"><a href="#">help</a></li>
-                <li class="links"><a href="#">bookings</a></li>
+                <li class="links"><a href="#">settings</a></li>
+                <li class="links"><a href="#bookings">bookings</a></li>
                 <li class="links"><a href="#sampleTrips" onclick="displayTrips()">view trips</a></li>
                 <li class="links"><button class="addtrip" onclick="createTrip()">Create trip</button></li>
                 <p><a href="#">admin</a></p>
@@ -27,7 +27,7 @@
                     <p class="newTrip-subtext">Expand our service to new beautiful destinations and people.</p>
                     <hr>
                     <div class="imageContainer">
-                        
+                        <img src="https://imgplaceholder.com/150x150" alt="image of destination">
                     </div>
                     <input type="text" placeholder="From" required>
                     <input type="text" placeholder="To" required>
@@ -49,53 +49,86 @@
                     <input type="text" name="" id="description">
                     <br>
                     <button type="submit" id="createTripBtn2">Create Trip </button>
+                    <button id="cancelTripBtn" onclick="cancelTrip()">Cancel</button>
                 </form>
             </div>
             <div class="formSpaceControll"></div>
         </div>
         <div class="tripSamples">
             <div class="trips">
+                <p class="adminHeaders">Trips</p>
                 <div class="trip">
                     <div class="placeImage">
-                        <img src="" alt="an of your destination">
+                        <img src="https://imgplaceholder.com/150x150" alt="an of your destination">
                     </div>
                     <div class="tripSummary">
-                        <p>From : <span>from</span></p>
-                        <p>Date :<span>date</span></p>
-                        <p>Time :<span>time</span></p>
+                        <p>From : <span>Kampala-Kigali</span></p>
+                        <p>Date : <span>20 June 2019</span></p>
+                        <p>Time : <span>9:00 AM</span></p>
         
                         <button>Details</button>
-                        <button>book trip</button>
+                        <button>Cancel Trip</button>
                     </div>
                 </div>
                 <div class="trip">
                     <div class="placeImage">
-                            <img src="" alt="an of your destination">
+                            <img src="https://imgplaceholder.com/150x150" alt="an of your destination">
                     </div>
                     <div class="tripSummary">
-                        <p>From : <span>from</span></p>
-                        <p>Date :<span>date</span></p>
-                        <p>Time :<span>time</span></p>
+                        <p>From : <span>Kampala-Nairobi</span></p>
+                        <p>Date : <span>20 June 2019</span></p>
+                        <p>Time : <span>4:00 PM</span></p>
                 
                         <button>Details</button>
-                        <button>book trip</button>
+                        <button>Cancel Trip</button>
                     </div>
                     
                 </div>
                 <div class="trip">
                     <div class="placeImage">
-                            <img src="" alt="an of your destination">
+                            <img src="https://imgplaceholder.com/150x150" alt="an of your destination">
                     </div>
                     <div class="tripSummary">
-                        <p>From : <span>from</span></p>
-                        <p>Date :<span>date</span></p>
-                        <p>Time :<span>time</span></p>
+                        <p>From : <span>Nairobi-Mombasa</span></p>
+                        <p>Date :<span>21 June 2019</span></p>
+                        <p>Time :<span>2:00 PM</span></p>
                 
                         <button>Details</button>
-                        <button>book trip</button>
+                        <button>Cancel Trip</button>
                     </div>
                 </div>
-                </div>
+            </div>
+        </div>
+        <div class="bookings" id="bookings">
+            <p class="adminHeaders">User Bookings</p>
+            <p>Kampala to Kigali Trip</p>
+            <table>
+                <tr>
+                    <th>NO.</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>CONTACT</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>NKONO MICHAEL</td>
+                    <td>nkono.mic@gmail.com</td>
+                    <td>0871351223</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ernst Handel</td>
+                    <td>RolandMendel@gmail.com</td>
+                    <td>0798233445</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Island Trading</td>
+                    <td>Islandtrading@gmail.com</td>
+                    <td>074321423434</td>
+                </tr>
+            </table>
+
         </div>
     </main>
 
