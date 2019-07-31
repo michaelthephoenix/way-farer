@@ -11,8 +11,8 @@ ul {
     background-color: #333;
 }
   
-  li {
-    float:right;
+li {
+  float:right;
 }
 
 ul > p > a {
@@ -26,40 +26,48 @@ ul > p > a {
     border-right: none;
   }
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 25px;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-  
-  li a:hover:not(.addtrip) {
-    background-color: #111;
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+li a:hover:not(.addtrip) {
+  background-color: rgb(220, 117, 54);
+}
+.web_name {
+  margin: 9px 0;
+  font-family: 'Cinzel Decorative', sans-serif;
+  font-size: 20px;
+}
 
 
 .trips {
-    margin: 20px 70px auto 100px;
+    margin: 20px 100px auto 100px;
     padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 .trip{
     height:200px;
-    width: 60%;
-    background-color: #dddddd;
-    margin-bottom: 5px;
+    width: 400px;
+    /* background-color: #dddddd; */
+    margin: 20px;
     display: flex;
     justify-content: flex-start;
     border-radius: 3px;
-
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 700px) {
   .trips {
     margin: 0;
   }
+}
+@media screen and (max-width: 1000px) {
   .trip{
     width: 100%;
   }
@@ -87,15 +95,30 @@ ul > p > a {
     display: none;
   }
 }
-
+/* USER CSS */
+.userBookings {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.userHeadings {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+.userSubtext {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #686868;
+  font-size: 24px;
+}
+/* USER CSS */
 
 /* ADMIN CSS */
 .addtrip {
   border: none;
   padding: 14px 25px;
-  margin: 5px;
+  /* margin: 5px; */
   margin-bottom: 0px;
   color: white;
+  font-size: 16px;
   background-color:transparent;
   border-radius: 2px; 
 }
@@ -122,11 +145,11 @@ ul > p > a {
   
 }
 
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1500px) {
   .myTripForm {
     width: 90%;
   }
-}
+} */
 
 .smallHead {
   font-size: 24px;
@@ -186,9 +209,31 @@ label {
   border-radius: 2px;
 
 }
+
+.bookTripBtn {
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+  background-color: orange;
+}
+.cancelTripBtn {
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+  background-color: rgb(233, 51, 51);
+}
+
+.details {
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+  background-color: rgb(65, 160, 192);
+}
 .adminHeaders {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .bookings {

@@ -9,9 +9,9 @@ main {
     position: relative;
     z-index: 1;
 }
-/* .container {
+.container {
     display: flex;
-} */
+}
 
 body:before {
     content: ' ';
@@ -24,7 +24,7 @@ body:before {
     filter: grayscale(50%);
     /* filter: blur(4px); */
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.7;
     background-image: url('blur.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -38,7 +38,7 @@ body:before {
 header{
     text-align: center;
     color: black;
-    font-size: 40px;
+    font-size: 60px;
     text-transform: uppercase;
     margin: 0;
     padding-left: 10px;
@@ -48,7 +48,7 @@ header{
 }
 
 .firstQoute {
-    font-size: 24px;
+    font-size: 36px;
     text-align: center;
 }
 .qoutes {
@@ -56,13 +56,13 @@ header{
     padding: 20px;
     border-radius: 2px;
     display: inline;
-    float: left;
+    /* float: left; */
     margin: 50px;
     font-family: 'Cinzel Decorative', cursive;
     font-size: 36px;
 }
 .qoutes > p {
-    font-size: 24px;
+    font-size: 36px;
 }
 .form {
     width: 350px;
@@ -70,7 +70,7 @@ header{
     color: white;
     border-radius: 3px;
     padding: 10px 30px 10px 30px;
-    float: right;
+    /* float: right; */
 
 }
 
@@ -103,7 +103,8 @@ label {
 }
 
 #signUpBtn {
-    border-radius: 50px;
+    border-radius: 2px;
+    padding: 3px;
     border: none;
     font-size: 16px;
     position: relative;
@@ -114,6 +115,7 @@ label {
 
 #signInLink {
     font-size: 16px;
+    color: cadetblue;
 }
 
 footer  {
@@ -147,7 +149,8 @@ footer .copyright {
     left: 35%;
     margin-top: 10px;
     font-size: 16px;
-    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2px;
     border: none;
     background-color: white;
 
@@ -164,6 +167,9 @@ footer .copyright {
     background-color:grey;
     border-radius: 50%;
     margin: auto;
+}
+.avatar {
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 700px) {

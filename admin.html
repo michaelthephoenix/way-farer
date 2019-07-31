@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <title>way | Farer</title>
 </head>
+
 <body>
     <main>
         <nav>
             <ul>
-                <li class="links"><a href="#">settings</a></li>
-                <li class="links"><a href="#bookings">bookings</a></li>
-                <li class="links"><a href="#sampleTrips" onclick="displayTrips()">view trips</a></li>
-                <li class="links"><button class="addtrip" onclick="createTrip()">Create trip</button></li>
-                <p><a href="#">admin</a></p>
+                <li><a href="#">settings</a></li>
+                <li><a href="#bookings">bookings</a></li>
+                <li class="active"><a href="#sampleTrips" onclick="displayTrips()">view trips</a></li>
+                <li><button class="addtrip" onclick="createTrip()">Create trip</button></li>
+                <p class="web_name"><a href="#">WAY FARER</a></p>
             </ul>
         </nav>
 
@@ -48,57 +51,132 @@
                     <br>
                     <input type="text" name="" id="description">
                     <br>
-                    <button type="submit" id="createTripBtn2">Create Trip </button>
-                    <button id="cancelTripBtn" onclick="cancelTrip()">Cancel</button>
+                    <button type="submit" id="createTripBtn2" class="cancelTripBtn">Create Trip </button>
+                    <button id="cancelTripBtn" class="cancelTripBtn" onclick="cancelTrip()">Cancel</button>
                 </form>
             </div>
             <div class="formSpaceControll"></div>
         </div>
-        <div class="tripSamples">
-            <div class="trips">
-                <p class="adminHeaders">Trips</p>
+        <div class="trips">
                 <div class="trip">
                     <div class="placeImage">
-                        <img src="https://imgplaceholder.com/150x150" alt="an of your destination">
+                        <img src="https://themysteriousworld.com/wp-content/uploads/2015/11/perito-morino.webp" width="150px" height="150px" alt="an of your destination">
                     </div>
                     <div class="tripSummary">
                         <p>From : <span>Kampala-Kigali</span></p>
                         <p>Date : <span>20 June 2019</span></p>
                         <p>Time : <span>9:00 AM</span></p>
         
-                        <button>Details</button>
-                        <button>Cancel Trip</button>
+                        <button class="details">Details</button>
+                        <button class="cancelTripBtn">Cancel Trip</button>
                     </div>
                 </div>
                 <div class="trip">
                     <div class="placeImage">
-                            <img src="https://imgplaceholder.com/150x150" alt="an of your destination">
+                        <img src="https://themysteriousworld.com/wp-content/uploads/2015/11/rio-de-janeiro.webp" width="150px" height="150px " alt="an of your destination">
+                    </div>
+                    <div class="tripSummary">
+                        <p>From : <span>Kampala-Kigali</span></p>
+                        <p>Date : <span>20 June 2019</span></p>
+                        <p>Time : <span>9:00 AM</span></p>
+        
+                        <button class="details">Details</button>
+                        <button class="cancelTripBtn">Cancel Trip</button>
+                    </div>
+                </div>
+                <div class="trip">
+                    <div class="placeImage">
+                        <img src="https://themysteriousworld.com/wp-content/uploads/2015/11/angel-falls.webp" width="150px" height="150px" alt="an of your destination">
+                    </div>
+                    <div class="tripSummary">
+                        <p>From : <span>Kampala-Kigali</span></p>
+                        <p>Date : <span>20 June 2019</span></p>
+                        <p>Time : <span>9:00 AM</span></p>
+        
+                        <button class="details">Details</button>
+                        <button class="cancelTripBtn">Cancel Trip</button>
+                    </div>
+                </div>
+                <div class="trip">
+                    <div class="placeImage">
+                        <img src="https://themysteriousworld.com/wp-content/uploads/2015/11/machu-picchu.webp" width="150px" height="150px"  alt="an of your destination">
+                    </div>
+                    <div class="tripSummary">
+                        <p>From : <span>Kampala-Kigali</span></p>
+                        <p>Date : <span>20 June 2019</span></p>
+                        <p>Time : <span>9:00 AM</span></p>
+        
+                        <button class="details">Details</button>
+                        <button class="cancelTripBtn">Cancel Trip</button>
+                    </div>
+                </div>
+                <div class="trip">
+                    <div class="placeImage">
+                        <img src="https://themysteriousworld.com/wp-content/uploads/2015/08/tigers-nest.webp" width="150px" height="150px" alt="an of your destination">
+                    </div>
+                    <div class="tripSummary">
+                        <p>From : <span>Kampala-Kigali</span></p>
+                        <p>Date : <span>20 June 2019</span></p>
+                        <p>Time : <span>9:00 AM</span></p>
+        
+                        <button class="details">Details</button>
+                        <button class="cancelTripBtn">Cancel Trip</button>
+                    </div>
+                </div>
+                <div class="trip">
+                    <div class="placeImage">
+                        <img src="https://themysteriousworld.com/wp-content/uploads/2015/08/st.webp" width="150px" height="150px" alt="an of your destination">
+                    </div>
+                    <div class="tripSummary">
+                        <p>From : <span>Kampala-Kigali</span></p>
+                        <p>Date : <span>20 June 2019</span></p>
+                        <p>Time : <span>9:00 AM</span></p>
+        
+                        <button class="details">Details</button>
+                        <button class="cancelTripBtn">Cancel Trip</button>
+                    </div>
+                </div>
+                <div class="trip">
+                    <div class="placeImage">
+                        <img src="https://themysteriousworld.com/wp-content/uploads/2015/08/keukenhoff.webp" width="150px" height="150px" alt="an of your destination">
+                    </div>
+                    <div class="tripSummary">
+                        <p>From : <span>Kampala-Kigali</span></p>
+                        <p>Date : <span>20 June 2019</span></p>
+                        <p>Time : <span>9:00 AM</span></p>
+        
+                        <button class="details">Details</button>
+                        <button class="cancelTripBtn">Cancel Trip</button>
+                    </div>
+                </div>
+                <div class="trip">
+                    <div class="placeImage">
+                            <img src="https://themysteriousworld.com/wp-content/uploads/2015/08/faroe-island.webp" width="150px" height="150px" alt="an of your destination">
                     </div>
                     <div class="tripSummary">
                         <p>From : <span>Kampala-Nairobi</span></p>
                         <p>Date : <span>20 June 2019</span></p>
                         <p>Time : <span>4:00 PM</span></p>
                 
-                        <button>Details</button>
-                        <button>Cancel Trip</button>
+                        <button class="details">Details</button>
+                        <button class="cancelTripBtn">Cancel Trip</button>
                     </div>
                     
                 </div>
                 <div class="trip">
                     <div class="placeImage">
-                            <img src="https://imgplaceholder.com/150x150" alt="an of your destination">
+                            <img src="https://themysteriousworld.com/wp-content/uploads/2015/08/neelum-valley.webp" width="150px" height="150px" alt="an of your destination">
                     </div>
                     <div class="tripSummary">
-                        <p>From : <span>Nairobi-Mombasa</span></p>
-                        <p>Date :<span>21 June 2019</span></p>
-                        <p>Time :<span>2:00 PM</span></p>
+                            <p>From : <span>Nairobi-Mombasa</span></p>
+                            <p>Date :<span>21 June 2019</span></p>
+                            <p>Time :<span>2:00 PM</span></p>
                 
-                        <button>Details</button>
-                        <button>Cancel Trip</button>
+                        <button class="details">Details</button>
+                        <button class="cancelTripBtn">Cancel Trip</button>
                     </div>
                 </div>
             </div>
-        </div>
         <div class="bookings" id="bookings">
             <p class="adminHeaders">User Bookings</p>
             <p>Kampala to Kigali Trip</p>
@@ -148,4 +226,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -29,13 +29,16 @@ function createTrip() {
     var createTripForm = document.getElementById('myTripForm');
     var allTrips = document.getElementsByClassName('sampleTrips');
     createTripForm.style.display = 'block';
-    allTrips.style.display = 'none';
-
-    
+    // allTrips.style.display = 'none';
 }
 
 function cancelTrip() {
-    createTripForm.style.display = 'none';
+    myTripForm.style.display = 'none';
+}
+window.onclick = function(event) {
+    if (event.target == myTripForm) {
+        myTripForm.style.display = "none";
+    }
 }
 
 function displaytrips() {
