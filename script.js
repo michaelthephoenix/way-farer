@@ -31,18 +31,19 @@ function createTrip() {
     createTripForm.style.display = 'block';
     // allTrips.style.display = 'none';
 }
+const trips = document.getElementById('trips');
 
 const displayUsers = () => {
     const users = document.getElementById('users');
-    const trips = document.getElementById('trips');
     const bookings = document.getElementById('bookings');
     bookings.style.display = "none"
     trips.style.display = "none";
     users.style.display = "block";
 }
 const displayUserBookings = () => {
-    const bookingDetails = document.getElementById('each_user_booking')
-    boookingDeatails.style.display = 'block'
+    const bookingDetails = document.getElementById('each_user_booking');
+    users.style.display = 'none';
+    bookingDetails.style.display = 'block';
 }
 function cancelTrip() {
     myTripForm.style.display = 'none';
