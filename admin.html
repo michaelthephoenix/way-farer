@@ -16,6 +16,7 @@
             <ul>
                 <li><a href="#">settings</a></li>
                 <li><a href="#bookings">bookings</a></li>
+                <li><button class="addtrip" onclick="displayUsers()">Users</button></li>
                 <li class="active"><a href="#sampleTrips" onclick="displayTrips()">view trips</a></li>
                 <li><button class="addtrip" onclick="createTrip()">Create trip</button></li>
                 <p class="web_name"><a href="#">WAY FARER</a></p>
@@ -57,7 +58,7 @@
             </div>
             <div class="formSpaceControll"></div>
         </div>
-        <div class="trips">
+        <div class="trips" id="trips">
                 <div class="trip">
                     <div class="placeImage">
                         <img src="https://themysteriousworld.com/wp-content/uploads/2015/11/perito-morino.webp" width="150px" height="150px" alt="an of your destination">
@@ -207,6 +208,218 @@
                 </tr>
             </table>
 
+        </div>
+        <div class="users" id="users">
+            <p class="adminHeaders">
+                Our Users
+            </p>
+            <div class="search_box">
+                <div>
+                <input type="text" placeholder="Search.." class="topnav">
+                <button type="submit">Search</button>
+                </div>
+            </div>
+            <div class="allUsers">
+                <div class="user">
+                    <div class="user_img">
+                        <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                    </div>
+                    <div class="user_details">
+                        <p><span>Alpha User</p>
+                        <p><span>Phone :</span> 0732142352</p>
+                        <button class="user_bookings_btn">Veiw Bookings</button>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user_img">
+                        <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                    </div>
+                    <div class="user_details">
+                        <p><span>Babi Claire</span></p>
+                        <p><span>Phone :</span> 0732142352</p>
+                        <button class="user_bookings_btn">Veiw Bookings</button>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user_img">
+                        <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                    </div>
+                    <div class="user_details">
+                        <p><span>Spiderman Home_coming</p>
+                        <p><span>Phone :</span> 0732142352</p>
+                        <button class="user_bookings_btn">Veiw Bookings</button>
+                    </div>
+                </div>  
+                <div class="user">
+                    <div class="user_img">
+                        <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                    </div>
+                    <div class="user_details">
+                        <p><span>Dark Night</p>
+                        <p><span>Phone :</span> 0732142352</p>
+                        <button class="user_bookings_btn">Veiw Bookings</button>
+                    </div>
+                </div>
+                <div class="user">
+                        <div class="user_img">
+                            <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                        </div>
+                        <div class="user_details">
+                            <p><span>Avengers Infinty_war</p>
+                            <p><span>Phone :</span> 0732142352</p>
+                            <button class="user_bookings_btn">Veiw Bookings</button>
+                        </div>
+                    </div> 
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                        </div>
+                        <div class="user_details">
+                            <p><span>Avengers Endgame</p>
+                            <p><span>Phone :</span> 0732142352</p>
+                            <button class="user_bookings_btn">Veiw Bookings</button>
+                        </div>
+                    </div>
+                    <div class="user">
+                            <div class="user_img">
+                                <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                            </div>
+                            <div class="user_details">
+                                <p><span>Alpha User</p>
+                                <p><span>Phone :</span> 0732142352</p>
+                                <button class="user_bookings_btn">Veiw Bookings</button>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="user_img">
+                                <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                            </div>
+                            <div class="user_details">
+                                <p><span>Babi Claire</span></p>
+                                <p><span>Phone :</span> 0732142352</p>
+                                <button class="user_bookings_btn">Veiw Bookings</button>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="user_img">
+                                <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                            </div>
+                            <div class="user_details">
+                                <p><span>Spiderman Home_coming</p>
+                                <p><span>Phone :</span> 0732142352</p>
+                                <button class="user_bookings_btn">Veiw Bookings</button>
+                            </div>
+                        </div>  
+                        <div class="user">
+                            <div class="user_img">
+                                <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                            </div>
+                            <div class="user_details">
+                                <p><span>Dark Night</p>
+                                <p><span>Phone :</span> 0732142352</p>
+                                <button class="user_bookings_btn">Veiw Bookings</button>
+                            </div>
+                        </div>
+                <div class="user">
+                    <div class="user_img">
+                        <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                    </div>
+                    <div class="user_details">
+                        <p><span>Avengers Infinty_war</p>
+                        <p><span>Phone :</span> 0732142352</p>
+                        <button class="user_bookings_btn">Veiw Bookings</button>
+                    </div>
+                </div> 
+                <div class="user">
+                    <div class="user_img">
+                        <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                    </div>
+                    <div class="user_details">
+                        <p><span>Avengers Endgame</p>
+                        <p><span>Phone :</span> 0732142352</p>
+                        <button class="user_bookings_btn">Veiw Bookings</button>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user_img">
+                        <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                    </div>
+                    <div class="user_details">
+                        <p><span>Avengers Endgame</p>
+                        <p><span>Phone :</span> 0732142352</p>
+                        <button class="user_bookings_btn">Veiw Bookings</button>
+                    </div>
+                </div>
+                <div class="user">
+                        <div class="user_img">
+                            <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                        </div>
+                        <div class="user_details">
+                            <p><span>Alpha User</p>
+                            <p><span>Phone :</span> 0732142352</p>
+                            <button class="user_bookings_btn">Veiw Bookings</button>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                        </div>
+                        <div class="user_details">
+                            <p><span>Babi Claire</span></p>
+                            <p><span>Phone :</span> 0732142352</p>
+                            <button class="user_bookings_btn">Veiw Bookings</button>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                        </div>
+                        <div class="user_details">
+                            <p><span>Spiderman Home_coming</p>
+                            <p><span>Phone :</span> 0732142352</p>
+                            <button class="user_bookings_btn">Veiw Bookings</button>
+                        </div>
+                    </div>  
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                        </div>
+                        <div class="user_details">
+                            <p><span>Dark Night</p>
+                            <p><span>Phone :</span> 0732142352</p>
+                            <button class="user_bookings_btn">Veiw Bookings</button>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                        </div>
+                        <div class="user_details">
+                            <p><span>Avengers Infinty_war</p>
+                            <p><span>Phone :</span> 0732142352</p>
+                            <button class="user_bookings_btn">Veiw Bookings</button>
+                        </div>
+                    </div> 
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                        </div>
+                        <div class="user_details">
+                            <p><span>Avengers Endgame</p>
+                            <p><span>Phone :</span> 0732142352</p>
+                            <button class="user_bookings_btn" onclick="displayUerBookings()">Veiw Bookings</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="each_user_booking" id="each_user_booking">
+            <div class="user_img_div">
+                    <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_booking_img ">
+            </div>
+            <div class="booking_details">
+                <p>Alpha User booked <span>one</span> seat on <a href="#">Kampala-Kigali</a> trip</p>
+            </div>
+            <div class="control_bookings"></div>
         </div>
     </main>
 
