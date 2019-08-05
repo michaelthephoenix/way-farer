@@ -29,7 +29,7 @@ function createTrip() {
     var createTripForm = document.getElementById('myTripForm');
     var allTrips = document.getElementsByClassName('sampleTrips');
     createTripForm.style.display = 'block';
-    // allTrips.style.display = 'none';
+    allTrips.style.display = 'none';
 }
 const trips = document.getElementById('trips');
 
@@ -48,6 +48,10 @@ const displayUserBookings = () => {
 function cancelTrip() {
     myTripForm.style.display = 'none';
 }
+function cancelTripAlert() {
+    alert("This trip has bee canceled canceled")
+}
+
 window.onclick = function(event) {
     if (event.target == myTripForm) {
         myTripForm.style.display = "none";

@@ -1,18 +1,26 @@
 body {
-    margin: 0;
-    font-family: sans-serif;
+  margin: 0;
+  font-family: sans-serif;
 }
+
 main {
   position: relative;
   min-height: 88vh;
 }
 
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
   
 li {
@@ -26,9 +34,9 @@ ul > p > a {
   text-transform: uppercase;
 }
   
-  li:last-child {
-    border-right: none;
-  }
+li:last-child {
+  border-right: none;
+}
   
 li a {
   display: block;
@@ -42,6 +50,9 @@ li a {
 li a:hover:not(.addtrip) {
   background-color: rgb(220, 117, 54);
 }
+.active {
+  background-color: rgb(220, 117, 54);
+}
 .web_name {
   margin: 9px 0;
   font-family: 'Cinzel Decorative', sans-serif;
@@ -50,21 +61,20 @@ li a:hover:not(.addtrip) {
 
 
 .trips {
-    margin: 20px 100px auto 100px;
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-
+  margin: 20px 100px auto 100px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .trip{
-    height:200px;
-    width: 400px;
-    /* background-color: #dddddd; */
-    margin: 20px;
-    display: flex;
-    justify-content: flex-start;
-    border-radius: 3px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height:200px;
+  width: 400px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 700px) {
   .trips {
@@ -78,20 +88,20 @@ li a:hover:not(.addtrip) {
 }
 
 .placeImage {
-    width:150px;
-    height: 150px;
-    margin: 25px;
-    background-color:white;
-    position: relative;
+  width:150px;
+  height: 150px;
+  margin: 25px;
+  background-color:white;
+  position: relative;
 }
 
 .tripSummary {
-    position: relative;
-    margin: 25px auto 25px 0;
+  position: relative;
+  margin: 25px auto 25px 0;
 }
 
 .tripSummary > p {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 700px) {
@@ -101,8 +111,8 @@ li a:hover:not(.addtrip) {
 }
 /* USER CSS */
 .userBookings {
-  margin-left: 100px;
-  margin-right: 100px;
+  padding: 20px 100px 20px 100px;
+  background-color: #F5F5F5;
 }
 .userHeadings {
   font-family: Arial, Helvetica, sans-serif;
@@ -113,13 +123,15 @@ li a:hover:not(.addtrip) {
   color: #686868;
   font-size: 24px;
 }
+.nav_control {
+  height: 25px;
+}
 /* USER CSS */
 
 /* ADMIN CSS */
 .addtrip {
   border: none;
   padding: 14px 25px;
-  /* margin: 5px; */
   margin-bottom: 0px;
   color: white;
   font-size: 16px;
@@ -129,6 +141,19 @@ li a:hover:not(.addtrip) {
 
 .addtrip:hover {
   background-color: rgb(220, 117, 54);
+}
+.welcome {
+  margin-left: 100px;
+  margin-right: 150px;
+}
+
+.welcomingText {
+  font-size: 24px;
+}
+@media screen and (max-width: 700px) {
+  .welcome {
+    margin: 0;
+  }
 }
 .newTripForm {
   display: flex;
@@ -148,12 +173,6 @@ li a:hover:not(.addtrip) {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
-
-/* @media screen and (max-width: 1500px) {
-  .myTripForm {
-    width: 90%;
-  }
-} */
 
 .smallHead {
   font-size: 24px;
@@ -220,6 +239,11 @@ label {
   border-radius: 2px;
   border: none;
   background-color: orange;
+  color: white;
+  opacity: 0.85;
+}
+.bookTripBtn:hover {
+  opacity: 1;
 }
 .cancelTripBtn {
   padding: 5px;
@@ -244,11 +268,7 @@ label {
 .details:hover {
   opacity: 1;
 }
-/* .control_bookings {
-  display: flex;
-  width: 20%;
-  flex-grow: 1;
-} */
+
 .each_user_booking {
   display: none;
   height: 200px;
@@ -261,9 +281,7 @@ label {
 .user_booking_img {
   border-radius: 50%;
 }
-/* .each_user_booking > div {
-  flex-grow: 2;
-} */
+
 .booking_details > p {
   padding: 10px;
   margin: 20px;
@@ -277,10 +295,16 @@ label {
 }
 
 .bookings {
-  padding: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
+  padding-left: 110px;
+  padding-right: 100px;
+  padding-top: 15px;
+  background-color: #F5F5F5;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.the_user_bookings {
+  display: flex;
+  flex-wrap: wrap;
 }
 table {
   font-family: arial, sans-serif;
