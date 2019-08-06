@@ -19,14 +19,10 @@
                 <li class="link"><a href="/ui/pages/booking.html">bookings</a></li>
                 <li><a href="/ui/pages/filter.html">filter</a></li>
                 <li class="link active"><a href="/ui/pages/admin.html" target="_top">view trips</a></li>
-                <li ><button class="addtrip" onclick="createTrip()">Create trip</button></li>
+                <li><button class="addtrip" onclick="createTrip()">Create trip</button></li>
                 <p class="web_name"><a href="/ui/pages/admin.html" target="_top">WAY FARER</a></p>
             </ul>
         </nav>
-        <!-- <div class="filter_cont">
-            <input type="text" class="filter_input" placeholder="filter trips" />
-            <label for=""><img src="/ui/images/filter.png" alt="" class="filter_img"></label>
-        </div> -->
         <div class="modal" id="modal">
             <div class="newTripForm">
                 <div class="myTripForm" id="myTripForm">
@@ -37,15 +33,21 @@
                         <hr>
                         <div class="imageContainer">
                             <img src="https://imgplaceholder.com/150x150" alt="image of destination">
+                            <button class="add_photo_btn">Add Photo</button>
                         </div>
-                        <input type="text" placeholder="From" required>
-                        <input type="text" placeholder="To" required>
+                        <label for="">Origin :</label>
                         <br>
-                        <label for="">Date <span>*</span> </label>
+                        <input type="text" placeholder="From" class="place" required>
+                        <br>
+                        <label for="">Destination :</label>
+                        <br>
+                        <input type="text" placeholder="To" class="place" required>
+                        <br>
+                        <label for="">Date :</label>
                         <br>
                         <input type="date" name="" id="">
                         <br>
-                        <label for="">Time <span>*</span></label>
+                        <label for="">Time :</label>
                         <br>
                         <label for="depture">Depture :</label>
                         <input type="time" name="" id="" class="time" placeholder="Depture" required>
