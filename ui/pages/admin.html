@@ -13,13 +13,12 @@
 <body>
     <main>
         <nav>
-            <ul id="myNav">
-                <li class="link"><a href="/ui/pages/index.html">sign out</a></li>
-                <li class="link"><a href="/ui/pages/users_veiw.html" target="_top">users</a></li>
-                <li class="link"><a href="/ui/pages/booking.html">bookings</a></li>
-                <li><a href="/ui/pages/filter.html">filter</a></li>
-                <li class="link active"><a href="/ui/pages/admin.html" target="_top">view trips</a></li>
+            <ul>
+                <li><a href="/ui/pages/index.html">sign out</a></li>
+                <li><a href="/ui/pages/users_veiw.html" target="_top">users</a></li>
                 <li><button class="addtrip" onclick="createTrip()">Create trip</button></li>
+                <li><a href="/ui/pages/booking.html">bookings</a></li>
+                <li class="active"><a href="/ui/pages/admin.html" target="_top">view trips</a></li>
                 <p class="web_name"><a href="/ui/pages/admin.html" target="_top">WAY FARER</a></p>
             </ul>
         </nav>
@@ -33,21 +32,15 @@
                         <hr>
                         <div class="imageContainer">
                             <img src="https://imgplaceholder.com/150x150" alt="image of destination">
-                            <button class="add_photo_btn">Add Photo</button>
                         </div>
-                        <label for="">Origin :</label>
+                        <input type="text" placeholder="From" required>
+                        <input type="text" placeholder="To" required>
                         <br>
-                        <input type="text" placeholder="From" class="place" required>
-                        <br>
-                        <label for="">Destination :</label>
-                        <br>
-                        <input type="text" placeholder="To" class="place" required>
-                        <br>
-                        <label for="">Date :</label>
+                        <label for="">Date <span>*</span> </label>
                         <br>
                         <input type="date" name="" id="">
                         <br>
-                        <label for="">Time :</label>
+                        <label for="">Time <span>*</span></label>
                         <br>
                         <label for="depture">Depture :</label>
                         <input type="time" name="" id="" class="time" placeholder="Depture" required>

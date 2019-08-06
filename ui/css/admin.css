@@ -15,27 +15,6 @@ nav {
   z-index: 2;
 }
 
-.filter_cont {
-  margin-top: 50px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.filter_img {
-  margin: 5px 0;
-  padding: 8px 0;
-}
-
-.filter_input {
-  border: 1px solid black;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-radius: 0px;
-  padding: 8px 0px 0 8px;
-  font-size: 24px;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -46,8 +25,6 @@ ul {
 
 li {
   float: right;
-  margin-left: 3px;
-  border-radius: 2px;
 }
 
 ul>p>a {
@@ -71,12 +48,11 @@ li a {
 }
 
 li a:hover:not(.addtrip) {
-  background-color: #03DAC6;
+  background-color: rgb(220, 117, 54);
 }
 
 .active {
-  background-color: #03DAC6;
-  color: #000;
+  background-color: rgb(220, 117, 54);
 }
 
 .web_name {
@@ -143,6 +119,7 @@ li a:hover:not(.addtrip) {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 .close {
@@ -159,20 +136,17 @@ li a:hover:not(.addtrip) {
 }
 
 .addtrip {
-  border: 1px solid #690CEE;
-  padding: 0px 15px;
-  margin: 2px 5px;
-  color: #690CEE;
-  font-size: 15px;
-  text-transform: uppercase;
+  border: none;
+  padding: 14px 25px;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 16px;
   background-color: transparent;
   border-radius: 2px;
-  height: 40px;
 }
 
 .addtrip:hover {
-  background-color: #690CEE;
-  color: white;
+  background-color: rgb(220, 117, 54);
 }
 
 .welcome {
@@ -223,18 +197,6 @@ hr {
   height: 150px;
   background-color: gray;
   border-radius: 2px;
-  float: right;
-}
-
-.add_photo_btn {
-  background-color: #03DAC6;
-  color: white;
-  font-size: 16px;
-  position: relative;
-  left: 30px;
-  padding: 5px;
-  border: 1px solid #03DAC6;
-  border-radius: 2px;
 }
 
 input {
@@ -242,7 +204,6 @@ input {
   border: 2px solid #9c9c9c;
   border-radius: 2px;
   font-size: 16px;
-  padding-left: 5px;
 }
 
 span {
@@ -260,12 +221,6 @@ label {
 
 #description {
   width: 100%;
-  height: 50px;
-}
-
-.place {
-  width: 50%;
-  position: relative;
 }
 
 #createTripBtn2 {

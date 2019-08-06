@@ -54,40 +54,15 @@ function cancelTrip() {
 function cancelTripAlert() {
     alert("This trip has bee canceled canceled")
 }
-function myFunction() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[0];
-      if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
-        }
-      }       
-    }
-  }
+
+// window.onclick = function(event) {
+//     if (event.target == myTripForm) {
+//         myTripForm.style.display = "none";
+//     }
+// }
 
 function displaytrips() {
     allTrips.style.display = 'block'
 }
 
-// Get the container element
-var btnContainer = document.getElementById("myNav");
-
-// Get all buttons with class="btn" inside the container
-var links = btnContainer.getElementsByClassName("link");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+// slide show
