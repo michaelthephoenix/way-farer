@@ -6,7 +6,10 @@ function openSignInForm() {
     signUpForm.style.display = 'none'
     signInForm.style.display = 'block'
 }
-
+function openSignUpForm() {
+    signUpForm.style.display = 'block'
+    signInForm.style.display = 'none'
+}
 function logIn() {
     var userName = document.getElementById('uname').value;
     var password = document.getElementById('psw').value;
@@ -25,38 +28,38 @@ function logIn() {
 }
 
 function createTrip() {
-    var createTripBtn = document.getElementById('createTripBtn');
-    var createTripForm = document.getElementById('myTripForm');
-    var allTrips = document.getElementsByClassName('sampleTrips');
-    createTripForm.style.display = 'block';
-    allTrips.style.display = 'none';
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
 }
-const trips = document.getElementById('trips');
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-const displayUsers = () => {
-    const users = document.getElementById('users');
-    const bookings = document.getElementById('bookings');
-    bookings.style.display = "none"
-    trips.style.display = "none";
-    users.style.display = "block";
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
+
 const displayUserBookings = () => {
     const bookingDetails = document.getElementById('each_user_booking');
     users.style.display = 'none';
     bookingDetails.style.display = 'block';
 }
 function cancelTrip() {
-    myTripForm.style.display = 'none';
+    modal.style.display = 'none';
 }
 function cancelTripAlert() {
     alert("This trip has bee canceled canceled")
 }
 
-window.onclick = function(event) {
-    if (event.target == myTripForm) {
-        myTripForm.style.display = "none";
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == myTripForm) {
+//         myTripForm.style.display = "none";
+//     }
+// }
 
 function displaytrips() {
     allTrips.style.display = 'block'

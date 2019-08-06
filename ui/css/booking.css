@@ -1,0 +1,67 @@
+body {
+  background-color: #F5F5F5;
+}
+.bookings {
+  margin-top: 10px;
+  padding-left: 110px;
+  padding-right: 100px;
+  padding-top: 15px;
+  background-color: #F5F5F5;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+/* .each_user_booking {
+  display: none;
+  height: 200px;
+  width: 400px;
+  z-index: 1;
+} */
+.user_img_div {
+  border-radius: 50%;
+}
+.user_booking_img {
+  border-radius: 50%;
+}
+
+.booking_details > p {
+  padding: 10px;
+  margin: 20px;
+}
+
+.adminHeaders {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.the_user_bookings {
+  display: flex;
+  flex-wrap: wrap;
+}
+.user_img > img {
+  border-radius: 2px;
+}
+.user_details > p {
+  margin: 5px;
+  font-size: 18px;
+}
+
+.user_bookings_btn {
+  margin: 5px;
+  border: none;
+  padding: 3px;
+  font-size: 15px;
+  border-radius: 2px;
+  background-color: rgb(65, 160, 192);
+  color: white;
+}
+.user {
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  cursor: pointer;
+}

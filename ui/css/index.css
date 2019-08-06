@@ -7,7 +7,7 @@ html, body {
 main {
     margin: 0 40px 0 40px;
     position: relative;
-    min-height: 90vh;
+    min-height: 88.8vh;
     z-index: 1;
 }
 .container {
@@ -118,7 +118,7 @@ label {
 footer  {
     background-color: #303036;
     color: #d3d3d3;
-    min-height: 10%;
+    min-height: 10vh;
     position: relative;
     margin-top: 10px;
     bottom: 0px;
