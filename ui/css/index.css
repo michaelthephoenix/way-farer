@@ -105,26 +105,27 @@ label {
 }
 
 #signUpBtn {
+    width: 100%;
     border-radius: 2px;
     padding: 7px 10px 7px 10px;
     border: none;
     font-size: 16px;
-    position: relative;
-    left: 35%;
-    margin: 6px;
-    background-color: white;
+    background-color: #03DAC6;
 }
+
 ::placeholder {
     margin-left: 5px;
     padding-left: 5px;
-  }
+}
+
 .sign_words {
     margin-bottom: 24px;
+    text-align: center;
 }
 
 #signInLink {
     font-size: 16px;
-    color: cadetblue;
+    color: #03DAC6;
 }
 
 footer {
@@ -158,14 +159,13 @@ footer .copyright {
 }
 
 #loginBtn {
-    position: relative;
-    left: 40%;
+    width: 100%;
     margin-top: 10px;
     font-size: 16px;
     padding: 7px 10px 7px 10px;
     border-radius: 2px;
     border: none;
-    background-color: white;
+    background-color: #03DAC6;
 }
 
 #loginBtn>a {
@@ -175,8 +175,8 @@ footer .copyright {
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     background-color: grey;
     border-radius: 50%;
     margin: auto;
