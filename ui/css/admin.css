@@ -17,17 +17,21 @@ nav {
 
 .filter_cont {
   margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
 }
 .filter_img {
-  position: relative;
-  
+  margin: 5px 0;
+  padding: 8px 0;
 }
 
 .filter_input {
+  border: 1px solid black;
   border-top: none;
   border-left: none;
   border-right: none;
-  padding: 8px;
+  border-radius: 0px;
+  padding: 8px 0px 0 8px;
   font-size: 24px;
 }
 ul {
@@ -40,6 +44,8 @@ ul {
 
 li {
   float: right;
+  margin-left: 3px;
+  border-radius: 2px;
 }
 
 ul>p>a {
@@ -63,11 +69,12 @@ li a {
 }
 
 li a:hover:not(.addtrip) {
-  background-color: rgb(220, 117, 54);
+  background-color: #03DAC6;
 }
 
 .active {
-  background-color: rgb(220, 117, 54);
+  background-color: #03DAC6;
+  color: #000;
 }
 
 .web_name {
@@ -151,17 +158,20 @@ li a:hover:not(.addtrip) {
 }
 
 .addtrip {
-  border: none;
-  padding: 14px 25px;
-  margin-bottom: 0px;
-  color: white;
-  font-size: 16px;
+  border: 1px solid #690CEE;
+  padding: 0px 15px;
+  margin: 2px 5px;
+  color: #690CEE;
+  font-size: 15px;
+  text-transform: uppercase;
   background-color: transparent;
   border-radius: 2px;
+  height: 40px;
 }
 
 .addtrip:hover {
-  background-color: rgb(220, 117, 54);
+  background-color: #690CEE;
+  color: white;
 }
 
 .welcome {

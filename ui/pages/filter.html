@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/ui/css/filter.css">
+  <link rel="stylesheet" href="/ui/css/admin.css">
+  <title>way | Farer</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/ui/pages/index.html">sign out</a></li>
+      <li><a href="/ui/pages/users_veiw.html" target="_top">users</a></li>
+      <li><a href="/ui/pages/booking.html">bookings</a></li>
+      <li class="active"><a href="/ui/pages/filter.html">filter</a></li>
+      <li><a href="/ui/pages/admin.html" target="_top">view trips</a></li>
+      <p class="web_name"><a href="/ui/pages/admin.html" target="_top">WAY FARER</a></p>
+    </ul>
+  </nav>
+  <main>
+    <div class="filter">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filter by destination.."
+        title="Type in a name">
+      <table id="myTable">
+        <tr class="header">
+          <th style="width:60%;">Origin</th>
+          <th style="width:40%;">Destination</th>
+        </tr>
+        <tr>
+          <td>Kigali</td>
+          <td>kampala</td>
+        </tr>
+        <tr>
+          <td>Kampala</td>
+          <td>Nairobi</td>
+        </tr>
+        <tr>
+          <td>Newyork</td>
+          <td>Tokyo</td>
+        </tr>
+        <tr>
+          <td>Koniglich </td>
+          <td>Juba</td>
+        </tr>
+        <tr>
+          <td>Lagos</td>
+          <td>Port Harcot</td>
+        </tr>
+        <tr>
+          <td>Magazzini</td>
+          <td>Dodoma</td>
+        </tr>
+        <tr>
+          <td>Dala-sa-lem</td>
+          <td>Nakuru</td>
+        </tr>
+        <tr>
+          <td>Shangai</td>
+          <td>Paris</td>
+        </tr>
+      </table>
+
+    </div>
+  </main>
+
+  <script src="/ui/js/script.js"></script>
+</body>
+
+</html>
