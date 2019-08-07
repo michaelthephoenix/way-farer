@@ -1,0 +1,49 @@
+.users {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.user {
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  cursor: pointer;
+}
+.allUsers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.search_box {
+  margin-right: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+input[placeholder='search..'] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.user_img > img {
+  border-radius: 2px;
+}
+.user_details > p {
+  margin: 5px;
+  font-size: 18px;
+}
+
+.user_bookings_btn {
+  margin: 5px;
+  border: none;
+  padding: 3px;
+  font-size: 15px;
+  border-radius: 2px;
+  background-color: rgb(65, 160, 192);
+  color: white;
+}
