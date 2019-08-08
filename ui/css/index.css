@@ -5,7 +5,7 @@ html, body {
 }
 
 main {
-    margin: 0 40px 0 40px;
+    margin: 0;
     position: relative;
     min-height: 88.5vh;
     z-index: 1;
@@ -27,8 +27,8 @@ body:before {
     filter: grayscale(50%);
     filter: blur(2px);
     z-index: 1;
-    opacity: 0.7;
-    background-image: url('/blur.jpg');
+    /* opacity: 0.7; */
+    background-image: url('../images/blur.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -38,25 +38,44 @@ body:before {
     background-size: cover;
 }
 
+.overlay {
+    position: relative; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.6); /* Black see-through */
+    color: #f1f1f1; 
+    /* width: 100%; */
+    transition: .5s ease;
+    opacity:1;
+    color: white;
+    padding: 20px;
+    z-index: 3;
+  }
+
 header {
     text-align: center;
-    color: black;
+    color: white;
     font-size: 60px;
     text-transform: uppercase;
     margin: 0;
-    padding-left: 10px;
     height: 50px;
     width: 100%;
     font-family: 'Cinzel Decorative', sans-serif;
 }
 
+.over{
+    padding: 10px;
+    margin-bottom: 15px;
+}
 .firstQoute {
     text-align: center;
     font-size: 36px;
+    margin-bottom: 10px;
+
 }
 
 .qoutes {
-    padding: 20px;
+    padding: 10px;
     border-radius: 2px;
     display: inline;
     margin: 50px;

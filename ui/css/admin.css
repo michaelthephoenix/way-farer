@@ -90,6 +90,7 @@ li a:hover:not(.addtrip) {
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .trip {
