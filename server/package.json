@@ -1,0 +1,44 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "moment": "^2.24.0",
+    "path": "^0.12.7",
+    "sequelize": "^5.12.3"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
+  },
+  "scripts": {
+    "dev": "nodemon helpers/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelthephoenix/way-farer.git"
+  },
+  "author": "nkono michael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelthephoenix/way-farer/issues"
+  },
+  "homepage": "https://github.com/michaelthephoenix/way-farer#readme"
+}
