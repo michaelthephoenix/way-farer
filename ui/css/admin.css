@@ -86,7 +86,7 @@ li a:hover:not(.addtrip) {
 }
 
 .trips {
-  margin: 35px 100px auto 100px;
+  justify-content: center;
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +113,7 @@ li a:hover:not(.addtrip) {
     width: 100%;
   }
 }
+
 
 .placeImage {
   width: 150px;

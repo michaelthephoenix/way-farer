@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/user.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <title>way | farer</title>
 </head>
@@ -12,8 +13,7 @@
     <nav>
         
         <ul>
-            <li class="links"><a href="#">help</a></li>
-            <li class="links"><a href="#userBookings">bookings</a></li>
+            <li class="links"><a href="#userBooking">bookings</a></li>
             <li class="links"><a href="#" class="active">trips</a></li>
             <p class="web_name"><a href="#">WAY FARER</a></p>
         </ul>
@@ -21,11 +21,11 @@
     <div class="nav_control">
 
     </div>
-    <div class="userBookings">
-            <p class="userSubtext">Welcome to WayFarer.<br>
+    <div class="userBookings" id="userBookings">
+            <p class="userSubtext" id="userSubtext">Welcome to WayFarer.<br>
                 Book a trip to your next destination.
             </p>
-            <p class="userHeadings">Trips</p>
+            <p class="userHeadings" id="userHeadings">Trips</p>
     </div>
     <div class="trips">
         <div class="trip">
@@ -147,7 +147,7 @@
             </div>
         </div>
     </div>
-    <div class="userBookings" id="userBookings">
+    <div class="userBookings" id="userBooking">
         <p class="userHeadings">Your Bookings</p>
         <p>you have not yet made any bookings</p>
     </div>
