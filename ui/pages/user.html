@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/booking.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <title>way | farer</title>
 </head>
@@ -13,8 +14,9 @@
     <nav>
         
         <ul>
+            <li class="links"><a href="./index.html">Sign Out</a></li>
             <li class="links"><a href="#userBooking">bookings</a></li>
-            <li class="links"><a href="#" class="active">trips</a></li>
+            <li class="links"><a href="#" class="active" style="color: white">trips</a></li>
             <p class="web_name"><a href="#">WAY FARER</a></p>
         </ul>
     </nav>
@@ -25,7 +27,7 @@
             <p class="userSubtext" id="userSubtext">Welcome to WayFarer.<br>
                 Book a trip to your next destination.
             </p>
-            <p class="userHeadings" id="userHeadings">Trips</p>
+            <p class="userHeadings" id="userHeadings">Scheduled Trips</p>
     </div>
     <div class="trips">
         <div class="trip">
@@ -147,9 +149,37 @@
             </div>
         </div>
     </div>
+
     <div class="userBookings" id="userBooking">
-        <p class="userHeadings">Your Bookings</p>
-        <p>you have not yet made any bookings</p>
+        <p class="userHeadings" id="bookheading">Your Bookings</p>
+    </div>
+    <div class="my_bookings">
+        <div class="the_user_bookings">
+            <div class="user">
+                <div class="user_img">
+                    <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                </div>
+                <div class="user_details">
+                    <!-- <p><span>Coolest User</p> -->
+                    <p><span>Trip :</span>Kampala to Kigali</p>
+                    <p><span>Date :</span>19 August 2019</p>
+                    <p><span>Depture Time:</span>11:00 AM </p>
+                    <p><span>seat :</span> 1</p>
+                </div>
+            </div>
+            <div class="the_user_bookings">
+                <div class="user">
+                    <div class="user_img">
+                        <img src="https://i.pravatar.cc/90" alt="user's profile image" class="user_profile_img">
+                    </div>
+                    <div class="user_details">
+                        <!-- <p><span>Coolest User</p> -->
+                        <p><span>Trip :</span>Kampala to Kigali</p>
+                        <p><span>Date :</span>19 August 2019</p>
+                        <p><span>Depture Time:</span>11:00 AM </p>
+                        <p><span>seat :</span> 1</p>
+                    </div>
+                </div>
     </div>
 
 </body>
