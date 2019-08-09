@@ -1,19 +1,19 @@
 const users = [
   {
     id : 1,
-    email: "nkono.mi@gmail.com",
+    email: "nkono.mic@gmail.com",
     first_name: "nkono",
     last_name: "michael",
-    password: "HKI24l",
-    is_admin: true
+    password: "$2b$10$SSVwzP4Nqu9/e9u8EtkNquq1MZwVAMwMdQG4Qjezu3HgcLOIg7RoC",
+    is_admin: false
   },
   {
     id : 2,
-    email: "jdsisds.mi@gmail.com",
-    first_name: "dsfds",
-    last_name: "the_dudel",
-    password: "HKI24l",
-    is_admin: false
+    email: "cool.admin@gmail.com",
+    first_name: "cool",
+    last_name: "admin",
+    password: "$2b$10$SSVwzP4Nqu9/e9u8EtkNquq1MZwVAMwMdQG4Qjezu3HgcLOIg7RoC",
+    is_admin: true
   
   }
 

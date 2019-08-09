@@ -1,6 +1,8 @@
 import trips from "../data/tripdb";
 import moment from "moment";
 import Joi from 'joi';
+import jtw from 'jsonwebtoken';
+import auth from '../middleware/authoriseToken'
 
 
 
@@ -27,9 +29,8 @@ class tripsController {
     };
     const result = Joi.validate(req.body, schema);
     if (result.error) {
-      res.status(400).send(result.error.details[0].message);
+      return res.status(400).json(result.error.details[0].message);
     }
-
     const newTrip = {
       id: newId,
       origin,
@@ -93,19 +94,19 @@ class tripsController {
       fare: Joi.number().required(),
       status: Joi.string().required()
     };
-     result = Joi.validate(req.body, schema);
+    result = Joi.validate(req.body, schema);
     if (result.error) {
       res.status(400).send(result.error.details[0].message);
     }
 
     if (trip) {
       (trip.origin = origin),
-      (trip.destination =destination),
-      (trip.bus_license_number = bus_license_number),
-      (trip.seating_capacity = seating_capacity),
-      (trip.fare = fare),
-      (trip.status =status),
-      (trip.trip_date = trip_date);
+        (trip.destination = destination),
+        (trip.bus_license_number = bus_license_number),
+        (trip.seating_capacity = seating_capacity),
+        (trip.fare = fare),
+        (trip.status = status),
+        (trip.trip_date = trip_date);
       return res.status(201).json({
         message: "successfully updated",
         updateTrip: trip

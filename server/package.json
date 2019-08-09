@@ -7,7 +7,9 @@
     "test": "tests"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.6",
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
     "eslint": "^6.1.0",
@@ -15,6 +17,7 @@
     "eslint-plugin-import": "^2.18.2",
     "express": "^4.17.1",
     "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
     "moment": "^2.24.0",
     "path": "^0.12.7",
     "sequelize": "^5.12.3"
@@ -26,10 +29,10 @@
     "chai-http": "^4.3.0",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1"
-  },
+  }, 
   "scripts": {
-    "dev": "nodemon helpers/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./helpers/index.js",
+    "test": "nodemon mocha nyc tests/trips.test.js"
   },
   "repository": {
     "type": "git",
